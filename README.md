@@ -1,10 +1,10 @@
-# Business Intelligence Forecaster
+# CSV Regression Workbench
 
 A Python desktop application for exploring CSV data, comparing regression pipelines, and making predictions from numeric and categorical inputs.
 
 ## Overview
 
-The application brings data inspection, preprocessing, model comparison, and single-record prediction into a Tkinter interface. Despite the historical repository name, the current implementation performs **tabular regression** with a random train/test split. It does not implement chronological forecasting, Prophet, ARIMA, or rolling time-series validation.
+The application brings data inspection, preprocessing, model comparison, and single-record prediction into a Tkinter interface. Originally named Business Intelligence Forecaster (BIF), the application performs **tabular regression** with a random train/test split. It does not implement chronological forecasting, Prophet, ARIMA, or rolling time-series validation.
 
 ## Key features
 
@@ -26,7 +26,7 @@ flowchart TD
     D --> E["Metrics, prediction, and model export"]
 ```
 
-`BusinessIntelligenceForecaster` contains data/model operations. `BIForecastGUI` provides the Data, Model, and Predict tabs. Both are currently implemented in [BIF.py](BIF.py).
+`BusinessIntelligenceForecaster` contains data/model operations. `BIForecastGUI` provides the Data, Model, and Predict tabs. Both are currently implemented in [BIF.py](BIF.py). The Python class names and window title retain the original BIF name for compatibility.
 
 **Stack:** Python · pandas · NumPy · scikit-learn · Matplotlib · seaborn · Tkinter.
 
@@ -43,8 +43,8 @@ There is no committed business dataset or benchmark result. Training runs synchr
 Use Python 3.12 with Tkinter support:
 
 ```bash
-git clone https://github.com/minhiungan2608/Business-Intelligent-Forcaster.git
-cd Business-Intelligent-Forcaster
+git clone https://github.com/minhiungan2608/csv-regression-workbench.git
+cd csv-regression-workbench
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
